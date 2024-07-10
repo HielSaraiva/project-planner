@@ -1,9 +1,6 @@
 package com.hielsaraiva.project_planner.trip;
 
-import com.hielsaraiva.project_planner.activities.Activity;
-import com.hielsaraiva.project_planner.activities.ActivityRequestPayload;
-import com.hielsaraiva.project_planner.activities.ActivityResponse;
-import com.hielsaraiva.project_planner.activities.ActivityService;
+import com.hielsaraiva.project_planner.activities.*;
 import com.hielsaraiva.project_planner.participant.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -118,5 +115,12 @@ public class TripController {
             return ResponseEntity.ok(activityResponse);
         }
         return ResponseEntity.notFound().build();
+    }
+
+    @GetMapping("/{id}/activities")
+    public ResponseEntity<List<ActivityData>> getAllActivities(@PathVariable UUID id) {
+        List<ActivityData> activityDataList = this.activityService.getAllActivitiesFromId(id);
+
+        return ResponseEntity.ok(activityDataList);
     }
 }
