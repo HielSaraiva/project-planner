@@ -1,6 +1,6 @@
 package com.hielsaraiva.project_planner.trip;
 
-import com.hielsaraiva.project_planner.activities.*;
+import com.hielsaraiva.project_planner.activity.*;
 import com.hielsaraiva.project_planner.participant.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

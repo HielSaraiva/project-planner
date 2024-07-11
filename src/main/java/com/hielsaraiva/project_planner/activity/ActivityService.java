@@ -1,6 +1,5 @@
-package com.hielsaraiva.project_planner.activities;
+package com.hielsaraiva.project_planner.activity;
 
-import com.hielsaraiva.project_planner.participant.ParticipantData;
 import com.hielsaraiva.project_planner.trip.Trip;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,5 @@
-package com.hielsaraiva.project_planner.activities;
+package com.hielsaraiva.project_planner.activity;
 
-import com.hielsaraiva.project_planner.participant.Participant;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

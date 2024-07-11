@@ -1,4 +1,4 @@
-package com.hielsaraiva.project_planner.activities;
+package com.hielsaraiva.project_planner.activity;
 
 import java.util.UUID;
 

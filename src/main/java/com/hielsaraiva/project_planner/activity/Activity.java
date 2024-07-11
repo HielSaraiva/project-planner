@@ -1,4 +1,4 @@
-package com.hielsaraiva.project_planner.activities;
+package com.hielsaraiva.project_planner.activity;
 
 import com.hielsaraiva.project_planner.trip.Trip;
 import jakarta.persistence.*;
@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
