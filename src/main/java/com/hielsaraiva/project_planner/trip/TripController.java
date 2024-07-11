@@ -1,6 +1,7 @@
 package com.hielsaraiva.project_planner.trip;
 
 import com.hielsaraiva.project_planner.activity.*;
+import com.hielsaraiva.project_planner.link.LinkData;
 import com.hielsaraiva.project_planner.link.LinkRequestPayload;
 import com.hielsaraiva.project_planner.link.LinkResponse;
 import com.hielsaraiva.project_planner.link.LinkService;
@@ -150,5 +151,12 @@ public class TripController {
             return ResponseEntity.ok(linkResponse);
         }
         return ResponseEntity.notFound().build();
+    }
+
+    @GetMapping("/{id}/links")
+    public ResponseEntity<List<LinkData>> getAllLinks(@PathVariable UUID id) {
+        List<LinkData> linkDataList = this.linkService.getAllLinksFromTrip(id);
+
+        return ResponseEntity.ok(linkDataList);
     }
 }
