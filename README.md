@@ -28,8 +28,9 @@
 
 ## Technologies Used
 
-- REST Architecture
+- Java
 - Spring Framework
+- H2 database
 
 ## Versions
 
