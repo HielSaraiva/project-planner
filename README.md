@@ -1,10 +1,24 @@
 # Project API RESTful Planner with Spring Boot
 
+## Table of Contents
+
+1. [General Objective](#general-objective)
+2. [Project Overview](#project-overview)
+   1. [Features](#features)
+   2. [Maven Dependencies](#maven-dependencies)
+3. [Technologies Used](#technologies-used)
+4. [Versions](#versions)
+5. [Installations](#installations)
+
+---
+
 ## General Objective
 
 - Help the user organize trips for work or leisure. 
 - The user can create a trip with a name, start and end date. 
 - Within the trip, the user can plan their trip by adding activities to carry out each day.
+
+---
 
 ## Project Overview
 
@@ -26,16 +40,22 @@
 - Lombok
 - H2 Database
 
+---
+
 ## Technologies Used
 
 - Java
 - Spring Framework
 - H2 database
 
+---
+
 ## Versions
 
 - Java 21 
 - Spring Boot 3.3.1
+
+---
 
 ## Installations
 
